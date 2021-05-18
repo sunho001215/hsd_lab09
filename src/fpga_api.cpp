@@ -181,7 +181,7 @@ void FPGA::largeMM(const float* weight_mat, const float* input_mat, float* outpu
 	for(int idx_1 = 0; idx_1 < v_size_; idx_1++){
 	  for(int idx_2 = 0; idx_2 < v_size_; idx_2++){
 	    if(idx_1 < block_col_1 && idx_2 < block_col_2)
-	      m1[idx_1 * v_size_ + idx_2] = weight_mat[(idx_1 + j) * v_size_ + (idx_2 + k)];
+	      m1[idx_1 * v_size_ + idx_2] = input_mat[(idx_1 + j) * v_size_ + (idx_2 + k)];
 	    else
 	      m1[idx_1 * v_size_ + idx_2] = 0;
 	  }
