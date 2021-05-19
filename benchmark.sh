@@ -9,7 +9,7 @@ python eval.py --num_test_images 100 --m_size 64 --v_size 64 --network mlp --run
 echo -e '\n=> Accuracy should be 0.97\n'
 
 # Conv Lowering(CPU) - Acc: 1.0
-python eval.py --num_test_images 100 --m_size 64 --v_size 64 --network cnn --run_type cpu
+python eval.py --num_test_images 100 --v_size 64 --network cnn --run_type cpu
 echo -e '\n=> Accuracy should be 1.0\n'
 
 # Conv Lowering(FPGA) - Acc: 1.0
